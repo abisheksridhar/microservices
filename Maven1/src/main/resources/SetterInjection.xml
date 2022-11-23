@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop">
+
+    <bean id="employee2" class="ConstructorInjection.Employee">
+       <property name="empId" >
+           <value>1000</value>
+       </property>
+        <property name="empName" >
+            <value>1000</value>
+        </property>
+        <property name="address" ref="address">
+        </property>
+    </bean>
+    <bean id="address" class="ConstructorInjection.Address">
+       <property name="doorNo" value="11"></property>
+        <property name="streetName" value="ElmStreet"></property>
+        <property name="city" value="chennai"></property>
+    </bean>
+
+</beans>

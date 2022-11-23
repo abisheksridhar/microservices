@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test2
+    username: root
+    password: 12345678
+  jpa:
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+  cloud:
+    discovery:
+      enabled: true
+server:
+  port: 8080
+
+
+
+
